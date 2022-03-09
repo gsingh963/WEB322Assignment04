@@ -1,0 +1,31 @@
+<main>
+    <div class="form-wrapper">
+        <form method="POST">
+            <h2 class="title">Registration</h2>
+
+            <div class="input-group">
+                <label for="name">Your Name {{#if errors.name}}<span>{{errors.name}}</span>{{/if}}</label>
+                <input type="text" name="name" id="email" class="textbox"/>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email {{#if errors.email}}<span>{{errors.email}}</span>{{/if}}</label>
+                <input type="text" name="email" id="email" class="textbox"/>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password {{#if errors.password}}<span>{{errors.password}}</span>{{/if}}</label>
+                <input type="password" name="password" id="password" class="textbox"/>
+            </div>
+
+            <div class="input-group">
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" name="cpassword" id="cpassword" class="textbox"/>
+            </div>
+
+            <div class="submission">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
+</main>

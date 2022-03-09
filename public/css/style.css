@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Titillium+Web&display=swap');
+
+html, body {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top:0;
+    margin-bottom:15px;
+}
+
+h1, h2 {
+    margin-bottom:30px;
+}
+
+a {
+    color:#1EB9CB;
+    transition:color 0.2s;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#147C88;
+}
+
+#header {
+    padding: 20px;
+}
+
+#header h1 {
+    margin-bottom:0px;
+    font-size:42px;
+}
+
+#header + nav {
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 20px 10px 20px;
+}
+
+#header + nav a {
+    margin-right:20px;
+    font-size:18px;
+}
+
+#footer {
+    padding:20px;
+    border-top: 2px solid #ddd;
+}
+
+#footer .inner {
+    display:flex;
+    max-width:1000px;
+    justify-content: space-between;
+    margin:0 auto;
+}
+
+.footer-item .title {
+    font-size:42px;
+    text-align: center;
+}
+
+.navlist {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navlist.vertical {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navlist.vertical a {
+    margin: 0 0 10px 0;
+}
+
+.navlist a {
+    display:block;
+    font-size:18px;
+    margin:15px;
+}
+
+.navlist i {
+    font-size:24px;
+}
+
+.form-wrapper {
+    max-width:550px;
+    margin:50px auto;
+}
+
+form {
+    padding:40px;
+    background:#f5f5f5;
+    border-radius:5px;
+}
+
+form .title {
+    font-size:42px;
+}
+
+.input-group {
+    display:block;
+    margin-bottom:20px;
+}
+
+.input-group label {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:10px;
+}
+
+.input-group label span::before {
+    content: '*';
+    margin-right:1px;
+}
+
+.input-group label span {
+    color:red;
+}
+
+button {
+    display:block;
+    background:#1EB9CB;
+    border-radius:5px;
+    outline:none;
+    border:none;
+    width:100%;
+    padding:15px;
+    font-size:20px;
+    color:white;
+    transition:box-shadow 0.2s;
+}
+
+button:focus {
+    box-shadow:0px 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+.textbox {
+    border-radius:5px;
+    padding:10px;
+    border:2px solid #ddd;
+    outline:none;
+    transition:box-shadow 0.2s;
+    display:block;
+    width:100%;
+}
+
+main {
+    padding:20px;
+}
+
+.textbox:focus {
+    box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+.submission {
+    margin-top:50px;
+}
+
+#copyright {
+    margin-top:40px;
+    text-align:center;
+    font-size:22px;
+    color:#CCC;
+}
