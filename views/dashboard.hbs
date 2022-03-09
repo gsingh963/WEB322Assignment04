@@ -1,6 +1,32 @@
 <main class="dashboard">
-    <div class="greeting">
-        <h2>Howdy User,</h2>
-        <p>Welcome to the dashboard!</p>
+    <div class="inner">
+        <div class="greeting">
+            <h2>Howdy {{user.name}},</h2>
+            <p>Welcome to the dashboard. Take a look at our stock photography packages to boost your productivity!</p>
+        </div>
+    </div>
+
+    <div id="plans">
+        <h2 class="title">Plans</h2>
+        <div class="plans">
+            {{#each plans}}
+                <div class="plan">
+                    <h3 class="plan-title">{{this.plan_name}}</h3>
+                    <p class="plan-desc">{{this.plan_description}}</p>
+                    <p class="plan-price">C$<span class="price">{{this.plan_price}}</span></p>
+
+                    <button class="plan-atc">Add to Cart</button>
+
+                    <hr/>
+
+                    <h4>Features</h4>
+                    <div class="plan-features">
+                    {{#each this.features}}
+                        <span class="plan-feature">{{this}}</span>
+                    {{/each}}
+                    </div>
+                </div>
+            {{/each}}
+        </div>
     </div>
 </main>

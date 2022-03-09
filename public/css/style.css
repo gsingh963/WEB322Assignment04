@@ -22,6 +22,18 @@ h1, h2 {
     margin-bottom:30px;
 }
 
+h2 {
+    margin-bottom:10px;
+}
+
+p {
+    margin-top:0;
+}
+
+p:last-of-type {
+    margin-bottom:0;
+}
+
 a {
     color:#1EB9CB;
     transition:color 0.2s;
@@ -173,4 +185,80 @@ main {
     text-align:center;
     font-size:22px;
     color:#CCC;
+}
+
+.dashboard .inner {
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.greeting {
+    background:#eee;
+    color:#000;
+    border-radius:10px;
+    padding:30px;
+}
+
+#plans {
+    max-width:1200px;
+    margin:50px auto;
+}
+
+#plans .title {
+    font-size:38px;
+    text-align: center;
+}
+
+.plans {
+    display:flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.plan {
+    background:#eee;
+    padding:20px;
+    border-radius:10px;
+    text-align: center;
+    max-width:350px;
+    min-height:400px;
+}
+
+.plan-title {
+    font-size:32px;
+}
+
+.plan-features {
+    display:flex;
+    flex-direction: column;
+}
+
+.plan-price {
+    font-size:22px;
+    color:#1EB9CB;
+    font-weight: bold;
+}
+
+.plan-atc {
+    font-size:14px;
+    padding:10px;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+
+.plan hr {
+    border:none;
+    width:100%;
+    height:2px;
+    background:#ddd;
+    margin-bottom:20px;
+}
+
+button {
+    cursor:pointer;
+    transition:background-color 0.2s;
+}
+
+button:hover {
+    background:#147C88;
 }

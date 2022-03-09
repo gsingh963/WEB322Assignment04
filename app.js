@@ -1,8 +1,9 @@
-let port = process.env.PORT || 3000;
-let path = require('path');
-let express = require('express');
-let app = express();
-let hbs = require('express-handlebars').create({
+const port = process.env.PORT || 3000;
+const path = require('path');
+const express = require('express');
+const app = express();
+const session = require('express-session');
+const hbs = require('express-handlebars').create({
   layoutsDir: path.join(__dirname, '/views/layouts'),
   extname: '.hbs',
   partialsDir: path.join(__dirname, '/views/partials'),
@@ -21,6 +22,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(express.urlencoded({
   extended: true
+}));
+
+app.use(session({ 
+  secret: 'topsecret',
+  resave: false,
+  saveUninitialized: true,
+  cookie: { secure: false }
 }));
 
 // Routers
